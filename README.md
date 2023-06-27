@@ -1,2 +1,4 @@
 # ktools
-KiCad tools
+
+This repository contains KiCad tools.
+
