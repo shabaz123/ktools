@@ -94,7 +94,6 @@ if not key_found:
 
 # count indent depth
 num_tabs = lines[linenum].count('\t')
-print(f"num_tabs = {num_tabs}")
 tabs = ""
 for i in range (0, num_tabs):
     tabs += "\t"
