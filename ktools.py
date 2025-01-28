@@ -27,7 +27,7 @@ def list_coords(format = ""):
         elif format == "python":
             print(f'    fx = brd.FindFootprintByReference("{fp.GetReference()}")')
             print("    if fx is not None:")
-            print(f'        fx.SetPosition(pcbnew.VECTOR2I(pcbnew.wxPoint({vect.x}, {vect.y})))')
+            print(f'        fx.SetPosition(pcbnew.VECTOR2I(pcbnew.wxPoint({vect.x}, {vect.y}).x,pcbnew.VECTOR2I(pcbnew.wxPoint({vect.x}, {vect.y}).y))')
             print(f'        fx.SetOrientation(pcbnew.EDA_ANGLE({orient.AsDegrees()}, pcbnew.DEGREES_T))')
     if format == "python":
         print('    pcbnew.Refresh()')
